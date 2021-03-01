@@ -1,5 +1,5 @@
 resource "aws_efs_file_system" "efs"{
-    creation_token = var.name
+    creation_token = "kmayer"
     tags = {
         Name = var.name
 		Client = var.client

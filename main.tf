@@ -7,7 +7,7 @@ provider "aws" {
 terraform {
 	backend "s3" {
 		bucket = "thinknyx"
-		key = "kmayer.tfstate"
+		key = "kmayer_1.tfstate"
 		region = "us-east-2"
 	}
 }

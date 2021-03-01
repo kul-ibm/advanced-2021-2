@@ -10,7 +10,7 @@ output "defaultVPC_ID"{
 }
 
 resource "aws_security_group" "securityGroup"{
-	name = "kul-sg"
+	name = "kmayer-sg"
 	description = "Managed by Terraform for Kul"
 	vpc_id = data.aws_vpc.defaultVPC.id
 	tags = {
