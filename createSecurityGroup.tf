@@ -24,6 +24,13 @@ resource "aws_security_group" "securityGroup"{
 		cidr_blocks = ["0.0.0.0/0"]
 		description = "SSH Access"
 	}
+	ingress {
+		protocol = "tcp"
+		from_port = 2049
+		to_port = 2049
+		cidr_blocks = ["0.0.0.0/0"]
+		description = "NFS Access"
+	}
 	egress {
 		protocol = "-1"
 		from_port = 0
